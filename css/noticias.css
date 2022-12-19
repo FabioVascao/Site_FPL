@@ -1,0 +1,177 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-Roboto);
+}
+:root {
+    font-size: 62.5%;
+    --cor0:#84A9C0;
+    --bg-li:#0b1d51;
+    --text-white: #ffffff;
+    --bg-header:#06AA48;
+    --cor3:#0B1D51ad;
+    --cor4:#06AA48ad;
+    --font-Mont: 'Montserrat', sans-serif;
+    --font-Roboto: 'Roboto', sans-serif;
+}
+body {
+    font-size: 1.6rem;
+}
+header {
+    width: min(100rem, 99vw);
+    margin: auto;
+    padding: 1rem 5rem;
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0 ;
+}
+header a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 1.8rem;
+}
+header li {
+    list-style: none;
+    background-color: var(--bg-li);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    text-align: center;
+}
+main {
+    width: min(100rem, 99vw);
+    margin: auto;
+    gap: 2rem;
+}
+.principal {
+    text-align: center;
+}
+.principal img {
+    width: 100%;
+}
+h1 {
+    font-family: var(--font-Roboto);
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: var(--bg-header);
+    border-radius: 1rem;
+    border-style: groove;
+    border-color: var(--bg-li);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+h2 {
+    font-family: var(--font-Mont);
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--cor0);
+    text-align: right;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+h2.titulo {
+    font-family: var(--font-Mont);
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--bg-header);
+    border-radius: 1rem;
+    border-style: groove;
+    border-color: var(--bg-li);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h3 {
+    font-size: 1.4rem;
+    color: black;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    text-align: right;
+}
+h4 {
+    font-family: var(--font-Mont);
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: black;
+    text-align: justify;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    text-indent: 2rem;
+}
+footer {
+    width: min(100rem, 99vw);
+    margin: auto;
+    padding: 1rem 5rem;
+    clear: both;
+    background-color:var(--bg-header);
+    font-family: var(--font-Roboto);
+    font-weight: bold;
+    border-radius: 0 0 1rem 1rem;
+}
+footer p {
+    font-weight: normal;
+    text-align:center;
+    margin: 3px;
+}
+footer a {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+footer button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+footer button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    box-shadow: .5rem .5rem 1rem black;
+    background-color: var(--cor1);
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s;
+}
+.botao1 {
+    background: url("../images/logos/logoyoutube.png") no-repeat;	
+    background-position: center;
+}
+.botao2 {
+    background: url("../images/logos/logoinsta.png") no-repeat;
+    background-position: center;
+}
+.botao3 {
+    background: url("../images/logos/logott.png") no-repeat;
+    background-position: center;
+}
+.botao4 {
+    background: url("../images/logos/logotiktok.png") no-repeat;
+    background-position: center;
+}
+
+@media (max-width:600px) {
+    header {
+        justify-content: center;
+    }
+    header img {
+        display: none;
+    }
+    main {
+        display: block;
+        gap: 0;
+    }
+    footer {
+        width: 100%;
+        padding: 1rem;
+    }
+}
